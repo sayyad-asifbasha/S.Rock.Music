@@ -12,10 +12,10 @@ class RockMusicTheme {
   static const Color _lightOnPrimaryColor = Color(0xFFFFFFFF);
   static const Color _lightPrimaryContainer = Color(0xFF71D3ED);
   static const Color _lightonPrimaryContainer = Color(0xFF000000);
-  static const Color _lightPrimaryFixed = Color(0xFF550120);
-  static const Color _lightOnPrimaryFixed = Color(0xFF2F2F39);
-  static const Color _lightPrimaryFixedDim = Color(0xFFA6D5E8);
-  static const Color _lightonPrimaryFixedVariant = Color(0xFF1B5167);
+  static const Color _lightPrimaryFixed = Color(0xFF18171C);
+  static const Color _lightOnPrimaryFixed = Color(0xFF550120);
+  static const Color _lightPrimaryFixedDim = Color(0xFF61616B);
+  static const Color _lightonPrimaryFixedVariant = Color(0xFF2C2D31);
 
 
 
