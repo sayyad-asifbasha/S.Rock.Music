@@ -4,9 +4,8 @@ A Flutter implementation of the Music Services home screen with Firebase integra
 
 ## 📱 Demo Video
 
-https://github.com/yourusername/rock_music/assets/your-asset-id/screen-recording.mp4
+https://github.com/user-attachments/assets/72cd4301-541d-4000-a2ee-68ca179e56df
 
-*Note: Replace the above URL with your actual GitHub video URL after uploading the screen recording to your repository.*
 
 ## Project Structure
 
@@ -52,6 +51,8 @@ lib/
     iconPath: String
   }
   ```
+
+  Image Link : https://github.com/sayyad-asifbasha/S.Rock.Music/issues/1#issue-3091169935
 - Real-time data updates
 - Error handling for network issues
 
@@ -87,20 +88,5 @@ lib/
 - ✅ Navigation implementation
 - ✅ Dependency injection (bonus)
 
-## 📝 How to Add Your Demo Video
 
-1. Record your screen using any screen recording tool (e.g., Windows Game Bar, OBS, or QuickTime)
-2. Save the video file (preferably in MP4 format)
-3. Go to your GitHub repository
-4. Click on "Issues"
-5. Click on "New Issue"
-6. Drag and drop your video file into the issue
-7. Copy the generated video URL
-8. Replace the video URL in this README with your actual video URL
 
-*Note: Make sure your video demonstrates:*
-- App launch
-- Service cards display
-- Navigation to detail screen
-- Firebase data loading
-- Overall UI responsiveness
