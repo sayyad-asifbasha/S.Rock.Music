@@ -13,7 +13,7 @@ class Loader extends StatefulWidget {
     this.minHeight = 10,
     this.maxHeight = 30,
     this.durationInMilliseconds = 500,
-    this.color = Colors.black, // Default color
+    this.color = Colors.black,
   }) : super(key: key);
 
   @override
