@@ -14,17 +14,15 @@ class MainScreen extends StatefulWidget {
 
 class _MainScreenState extends State<MainScreen>
     with SingleTickerProviderStateMixin {
-
-
-
   @override
   Widget build(BuildContext context) {
     return BaseView<MainScreenViewModel>(
       onModelReady: (model) {
-        model.initializeTabController(this,4);
+        model.initializeTabController(this, 4);
       },
       builder: (context, model, child) {
         return Scaffold(
+          resizeToAvoidBottomInset: false,
           appBar: AppBar(
             toolbarHeight: SizeConfig.blockSizeVertical! * 4,
             backgroundColor: Theme.of(context).colorScheme.primary,
@@ -36,15 +34,30 @@ class _MainScreenState extends State<MainScreen>
                   controller: model.tabController,
                   children: [
                     HomeScreen(),
-                    Container(
-                      child: Text("hello2"),
+                    Center(
+                      child: Text(
+                        "News",
+                        style: Theme.of(
+                          context,
+                        ).textTheme.titleLarge?.copyWith(fontSize: 20),
+                      ),
                     ),
-                    Container(
-                      child: Text("hello3"),
+                    Center(
+                      child: Text(
+                        "Music",
+                        style: Theme.of(
+                          context,
+                        ).textTheme.titleLarge?.copyWith(fontSize: 20),
+                      ),
                     ),
-                    Container(
-                      child: Text("hello4"),
-                    ),
+                    Center(
+                      child: Text(
+                        "Projects",
+                        style: Theme.of(
+                          context,
+                        ).textTheme.titleLarge?.copyWith(fontSize: 20),
+                      ),
+                    )
                   ],
                 ),
                 Positioned(
@@ -52,24 +65,30 @@ class _MainScreenState extends State<MainScreen>
                   left: 0,
                   right: 0,
                   child: Container(
-                    height: SizeConfig.safeBlockVertical!*10,
+                    height: SizeConfig.safeBlockVertical! * 10,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(15),
                       color: Theme.of(context).colorScheme.primaryFixed,
 
                       border: Border(
                         top: BorderSide(
-                          color: Theme.of(context).colorScheme.onPrimaryFixedVariant,
+                          color:
+                              Theme.of(
+                                context,
+                              ).colorScheme.onPrimaryFixedVariant,
                           width: 1,
                         ),
                       ),
                     ),
                     child: TabBar(
                       dividerHeight: 0,
-                      indicator: SemiCircleTabIndicator(color: Colors.white, radius: 7),
-                      controller:model.tabController,
-                      tabs:model.navItems(context),
-                      onTap: (index){
+                      indicator: SemiCircleTabIndicator(
+                        color: Colors.white,
+                        radius: 7,
+                      ),
+                      controller: model.tabController,
+                      tabs: model.navItems(context),
+                      onTap: (index) {
                         model.onTabClick(index);
                       },
                     ),

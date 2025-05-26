@@ -10,7 +10,7 @@ class RockMusicTheme {
   static const Color _lightAccentColor = Color(0xFF000000);
   static const Color _lightPrimaryColor = Color(0xFFA90140);
   static const Color _lightOnPrimaryColor = Color(0xFFFFFFFF);
-  static const Color _lightPrimaryContainer = Color(0xFF71D3ED);
+  static const Color _lightPrimaryContainer = Color(0xFF2C2D31);
   static const Color _lightonPrimaryContainer = Color(0xFF000000);
   static const Color _lightPrimaryFixed = Color(0xFF18171C);
   static const Color _lightOnPrimaryFixed = Color(0xFF550120);
@@ -52,20 +52,44 @@ class RockMusicTheme {
       onSecondaryFixed: _lightOnSecondaryFixed,
       secondaryFixedDim: _lightSecondaryFixedDim,
       onSecondaryFixedVariant: _lightonSecondaryFixedVariant,
-
     ).copyWith(secondary: _lightAccentColor),
   );
 
   static const TextTheme _lightTextTheme = TextTheme(
-    headlineMedium: TextStyle(fontWeight: FontWeight.w700, fontSize: 24),
-    headlineSmall: TextStyle(color: Colors.black, fontSize: 20),
-    titleLarge: TextStyle(fontSize: 16, color: Color(0xFF737373)),
-    bodyLarge: TextStyle(fontSize: 14, color: Color(0xFF737373)),
-    bodyMedium: TextStyle(fontSize: 14),
+    headlineMedium: TextStyle(
+      fontWeight: FontWeight.w700,
+      fontSize: 24,
+      fontFamily: 'Syne',
+    ),
+    headlineSmall: TextStyle(
+      color: Colors.black,
+      fontSize: 20,
+      fontFamily: 'Syne',
+    ),
+    titleSmall: TextStyle(
+      fontFamily: 'Syne',
+      color: Color(0xFFFFFFFF),
+    ),
+    titleMedium: TextStyle(
+      fontFamily: 'Syne',
+      color: Color(0xFFFFFFFF),
+    ),
+    titleLarge: TextStyle(
+      fontSize: 16,
+      color: Color(0xFFFFFFFF),
+      fontFamily: 'Syne',
+    ),
+    bodyLarge: TextStyle(
+      fontSize: 14,
+      color: Color(0xFFFFFFFF),
+      fontFamily: 'Syne',
+    ),
+    bodyMedium: TextStyle(fontSize: 14, fontFamily: 'Syne'),
     bodySmall: TextStyle(
       fontWeight: FontWeight.w400,
-      color: Color(0xFF737373),
+      color: Color(0xFFFFFFFF),
       fontSize: 12.0,
+      fontFamily: 'Syne',
     ),
   );
   static final InputDecorationTheme _lightInputDecorationTheme =

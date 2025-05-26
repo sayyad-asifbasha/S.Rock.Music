@@ -34,71 +34,83 @@ class MainScreenViewModel extends BaseModel {
 
   List<Tab> navItems(BuildContext context) => [
     Tab(
-      icon: Icon(
-        Icons.home,
-        size: SizeConfig.screenHeight! * 0.03,
+      icon:  Image.asset(
+        'assets/icons/s.rocks.music logo.png',
+        height: SizeConfig.screenHeight! * 0.03,
         color: selectedIndex == 0
             ? Theme.of(context).colorScheme.onPrimary
             : Theme.of(context).colorScheme.primaryFixedDim,
       ),
       child:  Text(
-        'Hello',
+        'Home',
         style: TextStyle(
           color: selectedIndex == 0
               ? Theme.of(context).colorScheme.onPrimary
               : Theme.of(context).colorScheme.primaryFixedDim,
+          fontWeight:FontWeight.w400,
+          fontSize: SizeConfig.blockSizeHorizontal!*3,
         ),
       ),
     ),
     Tab(
-      icon: Icon(
-        Icons.newspaper,
+      icon: Image.asset(
+        'assets/icons/Vector.png',
+        height: SizeConfig.safeBlockVertical! * 2.9,
+        width: SizeConfig.safeBlockHorizontal! * 6,
         color: selectedIndex == 1
             ? Theme.of(context).colorScheme.onPrimary
             : Theme.of(context).colorScheme.primaryFixedDim,
-        size: SizeConfig.screenHeight! * 0.03,
       ),
       child:  Text(
-        'Hello',
+        'News',
         style: TextStyle(
           color: selectedIndex == 1
               ? Theme.of(context).colorScheme.onPrimary
               : Theme.of(context).colorScheme.primaryFixedDim,
+          fontWeight:FontWeight.w400,
+          fontSize: SizeConfig.blockSizeHorizontal!*3,
         ),
       ),
     ),
     Tab(
-      icon: Icon(
-        selectedIndex == 2 ? Icons.person : Icons.person_outline,
+      icon:  Image.asset(
+        'assets/icons/Music.png',
+        height: SizeConfig.safeBlockVertical! * 2.9,
+        width: SizeConfig.safeBlockHorizontal! * 6,
+
         color: selectedIndex == 2
             ? Theme.of(context).colorScheme.onPrimary
             : Theme.of(context).colorScheme.primaryFixedDim,
-        size: SizeConfig.screenHeight! * 0.03,
       ),
       child:  Text(
-        'Hello',
+        'Music',
         style: TextStyle(
           color: selectedIndex == 2
               ? Theme.of(context).colorScheme.onPrimary
               : Theme.of(context).colorScheme.primaryFixedDim,
+          fontWeight:FontWeight.w400,
+          fontSize: SizeConfig.blockSizeHorizontal!*3,
         ),
       ),
-
     ),
     Tab(
-      icon: Icon(
-        selectedIndex == 3 ? Icons.person : Icons.person_outline,
+      icon:  Image.asset(
+        'assets/icons/Union.png',
+        height: SizeConfig.safeBlockVertical! * 2.9,
+        width: SizeConfig.safeBlockHorizontal! * 6,
+
         color: selectedIndex == 3
             ? Theme.of(context).colorScheme.onPrimary
             : Theme.of(context).colorScheme.primaryFixedDim,
-        size: SizeConfig.screenHeight! * 0.03,
       ),
       child:  Text(
-        'Hello',
+        'Projects',
         style: TextStyle(
           color: selectedIndex == 3
               ? Theme.of(context).colorScheme.onPrimary
               : Theme.of(context).colorScheme.primaryFixedDim,
+          fontWeight:FontWeight.w400,
+          fontSize: SizeConfig.blockSizeHorizontal!*3,
         ),
       ),
     ),
